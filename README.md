@@ -21,9 +21,7 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-In completing this project, I ran into two major problems which are the following: 1. Resolving conflict between layout width, layout height, and layout weight and 2. implementing the math operations to handle consecutive operation press. Assigning 'match_parent' or 'wrap_content' will take precedence and change the way layout_weight is handled. By using '0dp' for certain variables like width of the digit_0_button, I can ensure that the 2x width size is maintained by applying layout_weight = 2. If I used wrap_content instead, the layout_weight would no longer make sense and does not double the width with an assignment of layout_weight = 2. 
-
-In order to handle consecutive operation presses, I used boolean flag variables and a current operation variable. These two pieces of code allow for consecutive operations to be pressed and ensures that previous operation will still evaluated without clicking the '='. 
+This project takes advantage of the Firebase Realtime database by storing the information in cloud DB. This allows user to login from any device and access the same information. Information is represented within notescreens which are made up of recyclerViews. Information is updated only when an event triggers such a change
 
 ## License
 
